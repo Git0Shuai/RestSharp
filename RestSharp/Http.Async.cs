@@ -84,8 +84,6 @@ namespace RestSharp
                 }
                 else
                 {
-                    webRequest.GetResponseAsync();
-
                     timeoutState = new TimeOutState {Request = webRequest};
 
                     var asyncResult = webRequest.BeginGetResponse(
